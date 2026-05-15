@@ -131,7 +131,7 @@ export function Countdown({ targetDate, className }: CountdownProps) {
         <p className="mt-5 max-w-[36ch] text-[0.95rem] leading-8 text-[var(--opsidian-text-soft)]">
           {timeRemaining.total === 0
             ? "The countdown has reached zero. Transition the page state to the live event experience."
-            : "A single surface for participants to track the approach of the launch window without competing UI noise."}
+            : "Track the approach of ML Opsidian: Genesis as participants prepare to build, deploy, and scale production-grade AI systems."}
         </p>
       </div>
     </section>
