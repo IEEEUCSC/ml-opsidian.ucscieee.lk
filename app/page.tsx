@@ -46,7 +46,7 @@ export default function Page() {
             <div className="flex items-center gap-4">
               <div className="h-px w-16 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
               <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.34em] text-[var(--opsidian-text-muted)] uppercase">
-                Hackathon Countdown Interface
+                First-Ever MLOps Hackathon
               </p>
             </div>
           </header>
@@ -66,13 +66,14 @@ export default function Page() {
               <div className="max-w-[34rem] space-y-4">
                 <div className="h-px w-24 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
                 <p className="[font-family:var(--font-mono)] text-[0.76rem] leading-7 tracking-[0.18em] text-[var(--opsidian-text-muted)] uppercase">
-                  A live launch interface for participants, built to keep the
-                  event feeling imminent.
+                  Exclusively for University of Colombo students, built to
+                  bridge academic machine learning and production-grade AI
+                  systems.
                 </p>
                 <p className="max-w-[34ch] text-[1rem] leading-8 text-[var(--opsidian-text-soft)]">
-                  A controlled, high-tension countdown surface designed to make
-                  the remaining time feel immediate, precise, and impossible to
-                  ignore.
+                  Participants build, deploy, monitor, and maintain end-to-end
+                  ML pipelines while tackling real MLOps challenges such as data
+                  drift, scalability, automation, and continuous deployment.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -84,7 +85,7 @@ export default function Page() {
                   </Button>
 
                   <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
-                    Submission portal
+                    Production-ready AI engineering
                   </p>
                 </div>
               </div>
