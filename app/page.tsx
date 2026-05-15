@@ -1,19 +1,102 @@
+import Image from "next/image"
+
+import { Countdown } from "@/components/core/countdown"
 import { Button } from "@/components/ui/button"
+import ieeeSbLogo from "@/IEEE SB Logo.svg"
+
+const HACKATHON_START = "2026-08-15T09:00:00+05:30"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+    <main className="relative min-h-svh overflow-hidden bg-[var(--opsidian-background)] text-[var(--opsidian-text)]">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+          className="h-full w-full scale-[1.06] object-cover object-[62%_center] motion-reduce:hidden"
+        >
+          <source src="/2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgb(5_11_13_/_0.72)_0%,rgb(5_11_13_/_0.46)_26%,rgb(5_11_13_/_0.18)_56%,rgb(5_11_13_/_0.32)_100%),radial-gradient(circle_at_18%_18%,rgb(86_242_244_/_0.15),transparent_24%),radial-gradient(circle_at_72%_22%,rgb(86_242_244_/_0.12),transparent_20%),linear-gradient(135deg,rgb(13_23_26_/_0.42),rgb(5_11_13_/_0.52))]" />
+      <div className="absolute inset-0 [background-image:linear-gradient(to_right,rgb(28_77_80_/_0.16)_1px,transparent_1px),linear-gradient(to_bottom,rgb(28_77_80_/_0.16)_1px,transparent_1px)] [background-size:72px_72px] opacity-8" />
+      <div className="absolute inset-0 [background-image:linear-gradient(to_bottom,transparent,rgb(86_242_244_/_0.14),transparent)] [background-size:100%_3px] opacity-6" />
+
+      <div className="pointer-events-none absolute top-6 left-6 h-16 w-16 border-t border-l border-[color:rgb(86_242_244_/_0.8)] md:top-10 md:left-10" />
+      <div className="pointer-events-none absolute top-6 right-6 h-16 w-16 border-t border-r border-[color:rgb(86_242_244_/_0.8)] md:top-10 md:right-10" />
+      <div className="pointer-events-none absolute bottom-6 left-6 h-16 w-16 border-b border-l border-[color:rgb(86_242_244_/_0.8)] md:bottom-10 md:left-10" />
+      <div className="pointer-events-none absolute right-6 bottom-6 h-16 w-16 border-r border-b border-[color:rgb(86_242_244_/_0.8)] md:right-10 md:bottom-10" />
+      {/*<div className="pointer-events-none absolute top-26 left-[11%] hidden h-[46vh] w-px bg-[var(--opsidian-primary)]/55 shadow-[0_0_18px_rgb(86_242_244_/_0.55)] lg:block" />*/}
+      <div className="pointer-events-none absolute right-[11%] bottom-28 hidden h-[24vh] w-px bg-[var(--opsidian-primary)]/45 shadow-[0_0_18px_rgb(86_242_244_/_0.45)] xl:block" />
+
+      <div className="relative mx-auto flex min-h-svh w-full max-w-[94rem] items-center px-6 py-16 md:px-10 lg:px-14">
+        <div className="flex w-full flex-col gap-10 lg:gap-14">
+          <header className="flex flex-col gap-5 border-b border-[color:rgb(28_77_80_/_0.46)] pb-6 lg:flex-row lg:items-end lg:justify-between">
+            <Image
+              src={ieeeSbLogo}
+              alt="IEEE UCSC Student Branch logo"
+              className="h-auto w-[14rem] opacity-90 sm:w-[16rem]"
+              priority
+            />
+
+            <div className="flex items-center gap-4">
+              <div className="h-px w-16 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
+              <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.34em] text-[var(--opsidian-text-muted)] uppercase">
+                Hackathon Countdown Interface
+              </p>
+            </div>
+          </header>
+
+          <section className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(22rem,0.95fr)] lg:items-end xl:gap-16">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <p className="[font-family:var(--font-mono)] text-[0.78rem] tracking-[0.48em] text-[var(--opsidian-primary)] uppercase">
+                  Genesis
+                </p>
+                <h1 className="[font-family:var(--font-sans)] text-[clamp(3.8rem,10.5vw,7.8rem)] leading-[0.84] font-semibold tracking-[0.1em] text-[var(--opsidian-text)] uppercase">
+                  <span className="block">ML</span>
+                  <span className="block">Opsidian</span>
+                </h1>
+              </div>
+
+              <div className="max-w-[34rem] space-y-4">
+                <div className="h-px w-24 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
+                <p className="[font-family:var(--font-mono)] text-[0.76rem] leading-7 tracking-[0.18em] text-[var(--opsidian-text-muted)] uppercase">
+                  A live launch interface for participants, built to keep the
+                  event feeling imminent.
+                </p>
+                <p className="max-w-[34ch] text-[1rem] leading-8 text-[var(--opsidian-text-soft)]">
+                  A controlled, high-tension countdown surface designed to make
+                  the remaining time feel immediate, precise, and impossible to
+                  ignore.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <Button
+                    type="button"
+                    className="h-11 rounded-[10px] border border-[color:rgb(86_242_244_/_0.55)] bg-[var(--opsidian-primary)] px-5 [font-family:var(--font-mono)] text-[0.78rem] tracking-[0.2em] text-[var(--opsidian-background)] uppercase shadow-[0_0_26px_rgb(86_242_244_/_0.18)] hover:bg-[color:rgb(86_242_244_/_0.88)] focus-visible:border-[var(--opsidian-primary)] focus-visible:ring-[color:rgb(86_242_244_/_0.28)]"
+                  >
+                    Submit Project
+                  </Button>
+
+                  <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
+                    Submission portal
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <Countdown
+              targetDate={HACKATHON_START}
+              className="relative lg:ml-auto lg:w-full lg:max-w-[42rem]"
+            />
+          </section>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
