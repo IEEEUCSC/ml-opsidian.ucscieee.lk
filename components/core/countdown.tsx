@@ -94,14 +94,14 @@ export function Countdown({ targetDate, className }: CountdownProps) {
         className
       )}
     >
-      <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(86_242_244_/_0.75)] to-transparent" />
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(0_229_255_/_0.75)] to-transparent" />
       <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgb(28_77_80_/_0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgb(28_77_80_/_0.15)_1px,transparent_1px)] [background-size:36px_36px] opacity-40" />
-      <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,transparent,rgb(86_242_244_/_0.16),transparent)] [background-size:100%_3px] opacity-25" />
-      <div className="pointer-events-none absolute top-12 right-0 hidden h-24 w-px bg-[var(--opsidian-primary)]/45 shadow-[0_0_18px_rgb(86_242_244_/_0.35)] lg:block" />
+      <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,transparent,rgb(0_229_255_/_0.16),transparent)] [background-size:100%_3px] opacity-25" />
+      <div className="pointer-events-none absolute top-12 right-0 hidden h-24 w-px bg-[var(--opsidian-primary)]/45 shadow-[0_0_18px_rgb(0_229_255_/_0.35)] lg:block" />
 
       <div className="relative">
         <div className="mb-5 flex items-center gap-3 [font-family:var(--font-mono)] text-[0.72rem] tracking-[0.28em] text-[var(--opsidian-text-muted)] uppercase">
-          <span className="inline-flex size-2 rounded-full bg-[var(--opsidian-primary)] shadow-[0_0_18px_rgb(86_242_244_/_0.8)]" />
+          <span className="inline-flex size-2 rounded-full bg-[var(--opsidian-primary)] shadow-[0_0_18px_rgb(0_229_255_/_0.8)]" />
           {timeRemaining.total === 0
             ? "Launch window open"
             : "Countdown locked"}
@@ -113,7 +113,7 @@ export function Countdown({ targetDate, className }: CountdownProps) {
               key={segment.label}
               className="relative overflow-hidden rounded-[8px] border border-[var(--opsidian-border)] bg-[color:rgb(19_33_38_/_0.9)] px-4 py-4"
             >
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(86_242_244_/_0.45)] to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(0_229_255_/_0.45)] to-transparent" />
               <div className="mb-3 [font-family:var(--font-mono)] text-[0.7rem] tracking-[0.22em] text-[var(--opsidian-text-muted)] uppercase">
                 {segment.label}
               </div>
@@ -128,7 +128,7 @@ export function Countdown({ targetDate, className }: CountdownProps) {
           ))}
         </div>
 
-        <p className="mt-5 max-w-[36ch] text-[0.95rem] leading-8 text-[var(--opsidian-text-soft)]">
+        <p className="mt-5 text-[0.95rem] leading-8 text-[var(--opsidian-text-soft)]">
           {timeRemaining.total === 0
             ? "The countdown has reached zero. Transition the page state to the live event experience."
             : "Track the approach of ML Opsidian: Genesis as participants prepare to build, deploy, and scale production-grade AI systems."}

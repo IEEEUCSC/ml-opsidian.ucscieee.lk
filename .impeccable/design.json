@@ -7,50 +7,122 @@
       "primary": {
         "role": "primary",
         "displayName": "Electric Cyan",
-        "canonical": "oklch(88% 0.13 196)",
-        "tonalRamp": ["#083336", "#0E5C60", "#148489", "#1DB8BF", "#56F2F4", "#89FBFC", "#B9FEFE", "#E8FFFF"]
+        "canonical": "oklch(87% 0.15 216)",
+        "tonalRamp": [
+          "#041f23",
+          "#08363c",
+          "#0d5760",
+          "#00A6B8",
+          "#00E5FF",
+          "#66F1FF",
+          "#B3FAFF",
+          "#E8FFFF"
+        ]
       },
       "primary-deep": {
         "role": "primary",
         "displayName": "Signal Cyan",
-        "canonical": "oklch(74% 0.1 196)",
-        "tonalRamp": ["#07272A", "#0C474A", "#12696D", "#1B9298", "#1DB8BF", "#53D7DB", "#96EFF1", "#D8FBFC"]
+        "canonical": "oklch(72% 0.11 216)",
+        "tonalRamp": [
+          "#03181c",
+          "#062d33",
+          "#09464f",
+          "#007f91",
+          "#00A6B8",
+          "#3AD8EA",
+          "#8DEDF7",
+          "#D8FBFC"
+        ]
       },
       "background": {
         "role": "neutral",
         "displayName": "Reactor Black",
         "canonical": "oklch(14% 0.015 210)",
-        "tonalRamp": ["#010203", "#050B0D", "#0A1113", "#111B1E", "#1A272C", "#2A3E43", "#47676D", "#7CA7AD"]
+        "tonalRamp": [
+          "#010203",
+          "#050B0D",
+          "#0A1113",
+          "#111B1E",
+          "#1A272C",
+          "#2A3E43",
+          "#47676D",
+          "#7CA7AD"
+        ]
       },
       "surface": {
         "role": "neutral",
         "displayName": "Smoked Graphite",
         "canonical": "oklch(19% 0.018 210)",
-        "tonalRamp": ["#040708", "#0D171A", "#111E22", "#16262B", "#22373C", "#325055", "#4F767C", "#87B3B8"]
+        "tonalRamp": [
+          "#040708",
+          "#0D171A",
+          "#111E22",
+          "#16262B",
+          "#22373C",
+          "#325055",
+          "#4F767C",
+          "#87B3B8"
+        ]
       },
       "surface-strong": {
         "role": "neutral",
         "displayName": "Containment Slate",
         "canonical": "oklch(24% 0.02 210)",
-        "tonalRamp": ["#06090A", "#132126", "#192A30", "#20353B", "#2A4349", "#3C5C62", "#5E878D", "#96BEC2"]
+        "tonalRamp": [
+          "#06090A",
+          "#132126",
+          "#192A30",
+          "#20353B",
+          "#2A4349",
+          "#3C5C62",
+          "#5E878D",
+          "#96BEC2"
+        ]
       },
       "border": {
         "role": "neutral",
         "displayName": "Signal Teal",
         "canonical": "oklch(42% 0.05 205)",
-        "tonalRamp": ["#041213", "#0B2325", "#123638", "#18494C", "#1C4D50", "#2A7276", "#49A0A4", "#87D5D8"]
+        "tonalRamp": [
+          "#041213",
+          "#0B2325",
+          "#123638",
+          "#18494C",
+          "#1C4D50",
+          "#2A7276",
+          "#49A0A4",
+          "#87D5D8"
+        ]
       },
       "text-primary": {
         "role": "neutral",
         "displayName": "Frost White",
         "canonical": "oklch(98% 0.015 205)",
-        "tonalRamp": ["#24393C", "#496D72", "#719DA2", "#9EC8CC", "#CBE8EA", "#E8FFFF", "#F3FFFF", "#FBFFFF"]
+        "tonalRamp": [
+          "#24393C",
+          "#496D72",
+          "#719DA2",
+          "#9EC8CC",
+          "#CBE8EA",
+          "#E8FFFF",
+          "#F3FFFF",
+          "#FBFFFF"
+        ]
       },
       "text-secondary": {
         "role": "neutral",
         "displayName": "Broadcast Mist",
         "canonical": "oklch(79% 0.04 200)",
-        "tonalRamp": ["#102124", "#233F43", "#3A6267", "#567F84", "#7CB9BD", "#A7D6D9", "#CBEAEC", "#EAF7F8"]
+        "tonalRamp": [
+          "#102124",
+          "#233F43",
+          "#3A6267",
+          "#567F84",
+          "#7CB9BD",
+          "#A7D6D9",
+          "#CBEAEC",
+          "#EAF7F8"
+        ]
       }
     },
     "typographyMeta": {
@@ -78,7 +150,7 @@
     "shadows": [
       {
         "name": "signal-glow",
-        "value": "0 0 0 1px rgba(86, 242, 244, 0.22), 0 0 24px rgba(86, 242, 244, 0.14)",
+        "value": "0 0 0 1px rgba(0, 229, 255, 0.22), 0 0 24px rgba(0, 229, 255, 0.14)",
         "purpose": "Active countdown edges, focus states, and illuminated rails."
       },
       {
@@ -125,7 +197,7 @@
       "refersTo": "button-primary",
       "description": "Primary action styling for register or notify CTAs.",
       "html": "<button class=\"ds-btn-primary\">Register</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-width: 152px; height: 40px; padding: 0 20px; border-radius: 10px; border: 1px solid rgba(86,242,244,0.42); background: #56F2F4; color: #050B0D; font-family: JetBrains Mono, monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: transform 220ms cubic-bezier(0.19,1,0.22,1), box-shadow 220ms cubic-bezier(0.19,1,0.22,1), filter 220ms cubic-bezier(0.19,1,0.22,1); box-shadow: 0 0 0 1px rgba(86,242,244,0.2); } .ds-btn-primary:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(86,242,244,0.22), 0 0 24px rgba(86,242,244,0.16); filter: brightness(1.03); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(86,242,244,0.28), 0 0 0 1px rgba(86,242,244,0.5); } .ds-btn-primary:active { transform: translateY(0); }"
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-width: 152px; height: 40px; padding: 0 20px; border-radius: 10px; border: 1px solid rgba(0,229,255,0.42); background: #00E5FF; color: #050B0D; font-family: JetBrains Mono, monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: transform 220ms cubic-bezier(0.19,1,0.22,1), box-shadow 220ms cubic-bezier(0.19,1,0.22,1), filter 220ms cubic-bezier(0.19,1,0.22,1); box-shadow: 0 0 0 1px rgba(0,229,255,0.2); } .ds-btn-primary:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(0,229,255,0.22), 0 0 24px rgba(0,229,255,0.16); filter: brightness(1.03); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(0,229,255,0.28), 0 0 0 1px rgba(0,229,255,0.5); } .ds-btn-primary:active { transform: translateY(0); }"
     },
     {
       "name": "Ghost Button",
@@ -133,7 +205,7 @@
       "refersTo": "button-ghost",
       "description": "Secondary action styling for low-priority control options.",
       "html": "<button class=\"ds-btn-ghost\">Details</button>",
-      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-width: 148px; height: 40px; padding: 0 20px; border-radius: 10px; border: 1px solid #1C4D50; background: rgba(13,23,26,0.92); color: #E8FFFF; font-family: JetBrains Mono, monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: transform 220ms cubic-bezier(0.19,1,0.22,1), box-shadow 220ms cubic-bezier(0.19,1,0.22,1), border-color 220ms cubic-bezier(0.19,1,0.22,1); } .ds-btn-ghost:hover { transform: translateY(-1px); border-color: rgba(86,242,244,0.5); box-shadow: 0 0 0 1px rgba(86,242,244,0.16), inset 0 0 0 1px rgba(86,242,244,0.08); } .ds-btn-ghost:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(86,242,244,0.24), 0 0 0 1px rgba(86,242,244,0.42); } .ds-btn-ghost:active { transform: translateY(0); }"
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-width: 148px; height: 40px; padding: 0 20px; border-radius: 10px; border: 1px solid #1C4D50; background: rgba(13,23,26,0.92); color: #E8FFFF; font-family: JetBrains Mono, monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: transform 220ms cubic-bezier(0.19,1,0.22,1), box-shadow 220ms cubic-bezier(0.19,1,0.22,1), border-color 220ms cubic-bezier(0.19,1,0.22,1); } .ds-btn-ghost:hover { transform: translateY(-1px); border-color: rgba(0,229,255,0.5); box-shadow: 0 0 0 1px rgba(0,229,255,0.16), inset 0 0 0 1px rgba(0,229,255,0.08); } .ds-btn-ghost:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(0,229,255,0.24), 0 0 0 1px rgba(0,229,255,0.42); } .ds-btn-ghost:active { transform: translateY(0); }"
     },
     {
       "name": "Countdown Cell",
@@ -141,7 +213,7 @@
       "refersTo": "countdown-cell",
       "description": "Primary hero module for time units in the countdown cluster.",
       "html": "<div class=\"ds-countdown-cell\"><div class=\"ds-countdown-value\">12</div><div class=\"ds-countdown-label\">Days</div></div>",
-      "css": ".ds-countdown-cell { width: 120px; padding: 18px 16px 16px; border-radius: 8px; border: 1px solid rgba(28,77,80,0.9); background: linear-gradient(180deg, rgba(19,33,38,0.98) 0%, rgba(13,23,26,0.96) 100%); box-shadow: inset 0 1px 0 rgba(232,255,255,0.04), 0 0 0 1px rgba(86,242,244,0.05); position: relative; overflow: hidden; } .ds-countdown-cell::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(86,242,244,0.06) 0%, rgba(86,242,244,0) 38%); pointer-events: none; } .ds-countdown-value { color: #E8FFFF; font-family: Geist, Arial, sans-serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 600; line-height: 0.92; letter-spacing: 0.08em; text-transform: uppercase; } .ds-countdown-label { margin-top: 10px; color: #7CB9BD; font-family: JetBrains Mono, monospace; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; } .ds-countdown-cell:hover { box-shadow: 0 0 0 1px rgba(86,242,244,0.22), 0 0 24px rgba(86,242,244,0.12); } .ds-countdown-cell:focus-within { box-shadow: 0 0 0 3px rgba(86,242,244,0.22), 0 0 0 1px rgba(86,242,244,0.36); }"
+      "css": ".ds-countdown-cell { width: 120px; padding: 18px 16px 16px; border-radius: 8px; border: 1px solid rgba(28,77,80,0.9); background: linear-gradient(180deg, rgba(19,33,38,0.98) 0%, rgba(13,23,26,0.96) 100%); box-shadow: inset 0 1px 0 rgba(232,255,255,0.04), 0 0 0 1px rgba(0,229,255,0.05); position: relative; overflow: hidden; } .ds-countdown-cell::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,229,255,0.06) 0%, rgba(0,229,255,0) 38%); pointer-events: none; } .ds-countdown-value { color: #E8FFFF; font-family: Geist, Arial, sans-serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 600; line-height: 0.92; letter-spacing: 0.08em; text-transform: uppercase; } .ds-countdown-label { margin-top: 10px; color: #7CB9BD; font-family: JetBrains Mono, monospace; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; } .ds-countdown-cell:hover { box-shadow: 0 0 0 1px rgba(0,229,255,0.22), 0 0 24px rgba(0,229,255,0.12); } .ds-countdown-cell:focus-within { box-shadow: 0 0 0 3px rgba(0,229,255,0.22), 0 0 0 1px rgba(0,229,255,0.36); }"
     },
     {
       "name": "Title Plate",
@@ -198,7 +270,7 @@
     ],
     "dos": [
       "Do keep the dominant field between #050B0D and #132126, so the page stays cinematic and pressurized.",
-      "Do reserve #56F2F4 for the countdown, active rails, and the highest-priority signals.",
+      "Do reserve #00E5FF for the countdown, active rails, and the highest-priority signals.",
       "Do keep corners disciplined, between 4px and 10px, so the UI feels engineered rather than soft.",
       "Do use uppercase display or mono labels for hero messaging, countdown units, and CTA text.",
       "Do preserve strong contrast, clear keyboard focus, and reduced-motion fallbacks for any glow, sweep, or pulse effect."

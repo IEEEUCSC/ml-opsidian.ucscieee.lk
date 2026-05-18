@@ -48,8 +48,8 @@
 }
 
 :root {
-  --opsidian-primary: #56f2f4;
-  --opsidian-primary-deep: #1db8bf;
+  --opsidian-primary: #00e5ff;
+  --opsidian-primary-deep: #00a6b8;
   --opsidian-background: #050b0d;
   --opsidian-surface: #0d171a;
   --opsidian-surface-glass: rgb(13 23 26 / 0.84);
@@ -60,7 +60,7 @@
   --opsidian-text-muted: #7cb9bd;
   --opsidian-text-soft: #c5e7e8;
   --opsidian-shadow-plate: 0 18px 60px rgb(0 0 0 / 0.36);
-  --opsidian-shadow-signal: 0 0 24px rgb(86 242 244 / 0.14);
+  --opsidian-shadow-signal: 0 0 24px rgb(0 229 255 / 0.14);
   --background: oklch(1 0 0);
   --foreground: oklch(0.148 0.004 228.8);
   --card: oklch(1 0 0);
