@@ -1,10 +1,11 @@
 import Image from "next/image"
 
 import { Countdown } from "@/components/core/countdown"
-import { Button } from "@/components/ui/button"
+import { SubmissionCta } from "@/components/core/submission-cta"
 import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
-const HACKATHON_START = "2026-08-15T09:00:00+05:30"
+const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
+const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
 
 export default function Page() {
   return (
@@ -77,12 +78,10 @@ export default function Page() {
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 pt-2">
-                  <Button
-                    type="button"
-                    className="h-11 rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-5 [font-family:var(--font-mono)] text-[0.78rem] tracking-[0.2em] text-[var(--opsidian-background)] uppercase shadow-[0_0_26px_rgb(0_229_255_/_0.18)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:border-[var(--opsidian-primary)] focus-visible:ring-[color:rgb(0_229_255_/_0.28)]"
-                  >
-                    Submit Project
-                  </Button>
+                  <SubmissionCta
+                    openDate={SUBMISSION_OPEN}
+                    closeDate={SUBMISSION_DEADLINE}
+                  />
 
                   <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
                     Production-ready AI engineering
@@ -92,7 +91,7 @@ export default function Page() {
             </div>
 
             <Countdown
-              targetDate={HACKATHON_START}
+              targetDate={SUBMISSION_DEADLINE}
               className="relative lg:ml-auto lg:w-full lg:max-w-[42rem]"
             />
           </section>
