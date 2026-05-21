@@ -6,6 +6,7 @@ import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
 const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
 const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
+const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 
 export default function Page() {
   return (
@@ -44,11 +45,21 @@ export default function Page() {
               priority
             />
 
-            <div className="flex items-center gap-4">
-              <div className="h-px w-16 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
-              <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.34em] text-[var(--opsidian-text-muted)] uppercase">
-                First-Ever MLOps Hackathon
-              </p>
+            <div className="flex flex-col gap-3 lg:items-end">
+              <div className="flex items-center gap-4">
+                <div className="h-px w-16 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
+                <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.34em] text-[var(--opsidian-text-muted)] uppercase">
+                  First-Ever MLOps Hackathon
+                </p>
+              </div>
+
+              <a
+                href={DELEGATE_BOOKLET}
+                download="ML_Opsidian_Genesis_DelegateBooklet.pdf"
+                className="inline-flex h-9 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] transition-colors hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+              >
+                Download Booklet
+              </a>
             </div>
           </header>
 
@@ -77,16 +88,16 @@ export default function Page() {
                   drift, scalability, automation, and continuous deployment.
                 </p>
 
-                <div className="flex flex-wrap items-center gap-4 pt-2">
+                <div className="flex flex-wrap items-end gap-4 pt-2">
                   <SubmissionCta
                     openDate={SUBMISSION_OPEN}
                     closeDate={SUBMISSION_DEADLINE}
                   />
-
-                  <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
-                    Production-ready AI engineering
-                  </p>
                 </div>
+
+                <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
+                  Production-ready AI engineering
+                </p>
               </div>
             </div>
 
