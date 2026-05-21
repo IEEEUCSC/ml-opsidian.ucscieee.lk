@@ -7,6 +7,7 @@ import ieeeSbLogo from "@/IEEE SB Logo.svg"
 const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
 const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
+const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 
 export default function Page() {
   return (
@@ -53,13 +54,23 @@ export default function Page() {
                 </p>
               </div>
 
-              <a
-                href={DELEGATE_BOOKLET}
-                download="ML_Opsidian_Genesis_DelegateBooklet.pdf"
-                className="inline-flex h-9 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] transition-colors hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
-              >
-                Download Booklet
-              </a>
+              <div className="flex flex-wrap items-center gap-3 lg:justify-end">
+                <a
+                  href={DELEGATE_BOOKLET}
+                  download="ML_Opsidian_Genesis_DelegateBooklet.pdf"
+                  className="inline-flex h-9 items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-text)] uppercase transition-colors hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                >
+                  Download Booklet
+                </a>
+                <a
+                  href={REGISTRATION_LINK}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-9 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] transition-colors hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                >
+                  Register Now
+                </a>
+              </div>
             </div>
           </header>
 
