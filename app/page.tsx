@@ -87,36 +87,36 @@ export default function Page() {
       </div>
 
       <div className="relative z-10">
-        <header className="opsidian-fade-up sticky top-4 z-30 px-[4.5rem] md:top-6 md:px-[5.5rem] lg:px-[6.5rem]">
-          <div className="mx-auto flex w-full max-w-[94rem] flex-col gap-5 rounded-[14px] border border-[color:rgb(28_77_80_/_0.52)] bg-[color:rgb(5_11_13_/_0.62)] px-6 py-4 shadow-[0_18px_50px_rgb(0_0_0_/_0.22)] backdrop-blur-md md:px-8 lg:flex-row lg:items-end lg:justify-between">
+        <header className="opsidian-fade-up sticky top-0 z-30 px-4 pt-3 pb-2 md:px-[5.5rem] md:pt-6 md:pb-3 lg:px-[6.5rem]">
+          <div className="mx-auto flex w-full max-w-[94rem] flex-col gap-4 rounded-[12px] border border-[color:rgb(28_77_80_/_0.52)] bg-[color:rgb(5_11_13_/_0.72)] px-4 py-3 shadow-[0_18px_50px_rgb(0_0_0_/_0.22)] backdrop-blur-md md:px-8 md:py-4 lg:flex-row lg:items-end lg:justify-between">
             <Image
               src={ieeeSbLogo}
               alt="IEEE UCSC Student Branch logo"
-              className="h-auto w-[14rem] opacity-90 sm:w-[16rem]"
+              className="h-auto w-[11.25rem] opacity-90 sm:w-[13rem] md:w-[16rem]"
               priority
             />
 
-            <div className="flex flex-col gap-3 lg:items-end">
-              <div className="flex items-center gap-4">
-                <div className="h-px w-16 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent" />
-                <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.34em] text-[var(--opsidian-text-muted)] uppercase">
+            <div className="flex w-full flex-col gap-3 lg:w-auto lg:items-end">
+              <div className="flex items-center gap-3">
+                <div className="h-px w-10 shrink-0 bg-gradient-to-r from-[var(--opsidian-primary)]/75 to-transparent md:w-16" />
+                <p className="[font-family:var(--font-mono)] text-[0.6rem] leading-5 tracking-[0.28em] text-[var(--opsidian-text-muted)] uppercase md:text-[0.68rem] md:tracking-[0.34em]">
                   First-Ever MLOps Hackathon
                 </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-3 lg:justify-end">
+              <div className="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 lg:flex lg:w-auto lg:justify-end">
                 <a
                   href={REGISTRATION_LINK}
                   target="_blank"
                   rel="noreferrer"
-                  className="opsidian-button-motion inline-flex h-9 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                  className="opsidian-button-motion inline-flex h-10 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
                 >
                   Register Now
                 </a>
                 <a
                   href={DELEGATE_BOOKLET}
                   download="ML_Opsidian_Genesis_DelegateBooklet.pdf"
-                  className="opsidian-button-motion inline-flex h-9 items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-text)] uppercase hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                  className="opsidian-button-motion inline-flex h-10 items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-text)] uppercase hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
                 >
                   Download Booklet
                 </a>
