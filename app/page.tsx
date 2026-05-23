@@ -55,6 +55,26 @@ const TIMELINE_EVENTS = [
     tag: "Ceremony",
   },
 ] as const
+const PRIZES = [
+  {
+    place: "1st Place",
+    amount: "LKR 20,000",
+    status: "Confirmed Prize Pool",
+    featured: true,
+  },
+  {
+    place: "2nd Place",
+    amount: "To Be Announced",
+    status: "Announcement Pending",
+    featured: false,
+  },
+  {
+    place: "3rd Place",
+    amount: "To Be Announced",
+    status: "Announcement Pending",
+    featured: false,
+  },
+] as const
 
 export default function Page() {
   return (
@@ -236,6 +256,78 @@ export default function Page() {
                             {event.date}
                           </p>
                         </div>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative border-t border-[color:rgb(28_77_80_/_0.42)] bg-[linear-gradient(180deg,rgb(6_12_14_/_0.32)_0%,rgb(5_11_13_/_0.68)_100%)]">
+          <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgb(28_77_80_/_0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgb(28_77_80_/_0.1)_1px,transparent_1px)] [background-size:72px_72px] opacity-16" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(0_229_255_/_0.48)] to-transparent" />
+          <div className="pointer-events-none absolute top-10 left-[8%] h-56 w-56 rounded-full bg-[color:rgb(0_229_255_/_0.08)] blur-3xl" />
+
+          <div className="relative mx-auto max-w-[94rem] px-6 py-20 md:px-10 lg:px-14 lg:py-24">
+            <div className="grid gap-12 xl:grid-cols-[minmax(0,0.38fr)_minmax(0,0.62fr)] xl:gap-16">
+              <div className="space-y-6 xl:sticky xl:top-28 xl:self-start">
+                <p className="[font-family:var(--font-mono)] text-[0.76rem] tracking-[0.32em] text-[var(--opsidian-primary)] uppercase">
+                  Reward Pool
+                </p>
+                <div className="space-y-4">
+                  <h2 className="[font-family:var(--font-sans)] text-[clamp(2.2rem,5vw,4.4rem)] leading-[0.92] font-semibold tracking-[0.06em] text-[var(--opsidian-text)] uppercase">
+                    Prize
+                    <span className="block text-[var(--opsidian-primary)]">
+                      Structure
+                    </span>
+                  </h2>
+                  <div className="h-px w-36 bg-gradient-to-r from-[var(--opsidian-primary)]/80 to-transparent" />
+                </div>
+                <p className="max-w-[28rem] text-[1rem] leading-8 text-[var(--opsidian-text-soft)]">
+                  The lead award is locked in. Additional placements remain
+                  reserved until the final sponsor allocation is confirmed.
+                </p>
+              </div>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                {PRIZES.map((prize) => (
+                  <article
+                    key={prize.place}
+                    className={`opsidian-card-motion relative overflow-hidden rounded-[14px] border backdrop-blur-sm ${
+                      prize.featured
+                        ? "border-[color:rgb(0_229_255_/_0.52)] bg-[linear-gradient(180deg,rgb(0_229_255_/_0.1),rgb(19_33_38_/_0.92))] md:col-span-2"
+                        : "border-[color:rgb(28_77_80_/_0.82)] bg-[color:rgb(13_23_26_/_0.78)]"
+                    } p-6 shadow-[var(--opsidian-shadow-plate)]`}
+                  >
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(0_229_255_/_0.65)] to-transparent" />
+
+                    <div className="relative space-y-4">
+                      <div className="flex flex-wrap items-center justify-between gap-3">
+                        <span className="inline-flex rounded-[999px] border border-[color:rgb(0_229_255_/_0.3)] bg-[color:rgb(0_229_255_/_0.08)] px-3 py-1 [font-family:var(--font-mono)] text-[0.62rem] tracking-[0.18em] text-[var(--opsidian-primary)] uppercase">
+                          {prize.status}
+                        </span>
+                        <p className="[font-family:var(--font-mono)] text-[0.7rem] tracking-[0.22em] text-[var(--opsidian-text-muted)] uppercase">
+                          {prize.place}
+                        </p>
+                      </div>
+
+                      <div className="space-y-2">
+                        <h3
+                          className={`[font-family:var(--font-sans)] font-semibold uppercase ${
+                            prize.featured
+                              ? "text-[clamp(2.4rem,6vw,4.2rem)] leading-[0.9] tracking-[0.06em] text-[var(--opsidian-text)]"
+                              : "text-[1.4rem] leading-8 tracking-[0.05em] text-[var(--opsidian-text)]"
+                          }`}
+                        >
+                          {prize.amount}
+                        </h3>
+                        <p className="max-w-[28rem] text-[0.98rem] leading-7 text-[var(--opsidian-text-soft)]">
+                          {prize.featured
+                            ? "Awarded to the strongest end-to-end MLOps solution across architecture, deployment discipline, and operational reliability."
+                            : "This placement is reserved, but the final amount will be published once the remaining prize allocation is finalized."}
+                        </p>
                       </div>
                     </div>
                   </article>
