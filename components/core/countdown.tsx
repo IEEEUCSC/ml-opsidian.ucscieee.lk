@@ -87,7 +87,7 @@ export function Countdown({ targetDate, className }: CountdownProps) {
 
   return (
     <section
-      aria-label={`Submission deadline countdown. ${spokenTime}.`}
+      aria-label={`Hackathon initial round countdown. ${spokenTime}.`}
       aria-live="polite"
       className={cn(
         "relative overflow-hidden rounded-[10px] border border-[color:rgb(28_77_80_/_0.8)] bg-[var(--opsidian-surface-strong-glass)] p-4 shadow-[var(--opsidian-shadow-plate)] backdrop-blur-sm sm:p-6",
@@ -103,8 +103,8 @@ export function Countdown({ targetDate, className }: CountdownProps) {
         <div className="mb-5 flex items-center gap-3 [font-family:var(--font-mono)] text-[0.72rem] tracking-[0.28em] text-[var(--opsidian-text-muted)] uppercase">
           <span className="inline-flex size-2 rounded-full bg-[var(--opsidian-primary)] shadow-[0_0_18px_rgb(0_229_255_/_0.8)]" />
           {timeRemaining.total === 0
-            ? "Submission window closed"
-            : "Submission deadline active"}
+            ? "Initial round live"
+            : "Initial round countdown"}
         </div>
 
         <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
@@ -130,8 +130,8 @@ export function Countdown({ targetDate, className }: CountdownProps) {
 
         <p className="mt-5 text-[0.95rem] leading-8 text-[var(--opsidian-text-soft)]">
           {timeRemaining.total === 0
-            ? "The submission deadline has been reached. New project submissions are now closed."
-            : "Track the remaining time before the ML Opsidian: Genesis submission window closes on June 16 at 10:00 AM."}
+            ? "The countdown has reached zero. The ML Opsidian: Genesis Hackathon Initial Round is now live."
+            : "Track the remaining time before the ML Opsidian: Genesis Hackathon Initial Round begins on May 30 at 10:00 AM."}
         </p>
       </div>
     </section>

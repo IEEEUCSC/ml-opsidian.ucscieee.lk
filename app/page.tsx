@@ -6,6 +6,7 @@ import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
 const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
 const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
+const HACKATHON_INITIAL_ROUND = "2026-05-30T10:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 const TIMELINE_EVENTS = [
@@ -188,7 +189,7 @@ export default function Page() {
                 </div>
 
                 <Countdown
-                  targetDate={SUBMISSION_DEADLINE}
+                  targetDate={HACKATHON_INITIAL_ROUND}
                   className="opsidian-fade-up opsidian-fade-up-delay-3 relative lg:ml-auto lg:w-full lg:max-w-[42rem]"
                 />
               </section>
@@ -336,6 +337,73 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        <footer className="relative border-t border-[color:rgb(28_77_80_/_0.42)] bg-[linear-gradient(180deg,rgb(5_11_13_/_0.34)_0%,rgb(4_8_10_/_0.78)_100%)]">
+          <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgb(28_77_80_/_0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgb(28_77_80_/_0.08)_1px,transparent_1px)] [background-size:72px_72px] opacity-14" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:rgb(0_229_255_/_0.42)] to-transparent" />
+
+          <div className="relative mx-auto max-w-[94rem] px-6 py-12 md:px-10 lg:px-14 lg:py-14">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start lg:gap-14">
+              <div className="space-y-5">
+                <Image
+                  src={ieeeSbLogo}
+                  alt="IEEE UCSC Student Branch logo"
+                  className="h-auto w-[10.5rem] opacity-85 sm:w-[12rem]"
+                />
+
+                <div className="space-y-3">
+                  <p className="[font-family:var(--font-mono)] text-[0.72rem] tracking-[0.28em] text-[var(--opsidian-primary)] uppercase">
+                    ML Opsidian: Genesis
+                  </p>
+                  <p className="max-w-[36rem] text-[0.98rem] leading-8 text-[var(--opsidian-text-soft)]">
+                    A focused MLOps hackathon surface for University of Colombo
+                    students, designed to move academic machine learning closer
+                    to production-grade AI engineering.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:items-start lg:justify-end">
+                <div className="space-y-3 sm:min-w-[14rem]">
+                  <p className="[font-family:var(--font-mono)] text-[0.64rem] tracking-[0.24em] text-[var(--opsidian-text-muted)] uppercase">
+                    Access
+                  </p>
+                  <div className="flex flex-col items-start gap-2">
+                    <a
+                      href={REGISTRATION_LINK}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="opsidian-button-motion inline-flex h-10 min-w-[14rem] items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.66rem] tracking-[0.2em] text-[var(--opsidian-background)] uppercase shadow-[0_0_18px_rgb(0_229_255_/_0.14)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                    >
+                      Register
+                    </a>
+                    <a
+                      href={DELEGATE_BOOKLET}
+                      download="ML_Opsidian_Genesis_DelegateBooklet.pdf"
+                      className="opsidian-button-motion inline-flex h-10 min-w-[14rem] items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.66rem] tracking-[0.2em] text-[var(--opsidian-text)] uppercase hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                    >
+                      Delegate Booklet
+                    </a>
+                  </div>
+                </div>
+
+                <div className="space-y-3 sm:min-w-[15rem]">
+                  <p className="[font-family:var(--font-mono)] text-[0.64rem] tracking-[0.24em] text-[var(--opsidian-text-muted)] uppercase">
+                    Signal
+                  </p>
+                  <div className="space-y-2 text-left">
+                    <p className="[font-family:var(--font-mono)] text-[0.72rem] tracking-[0.22em] text-[var(--opsidian-text)] uppercase">
+                      UCSC IEEE Student Branch
+                    </p>
+                    <p className="text-[0.88rem] leading-7 text-[var(--opsidian-text-soft)]">
+                      Sri Lanka, 2026
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
   )
