@@ -61,6 +61,8 @@
   --opsidian-text-soft: #c5e7e8;
   --opsidian-shadow-plate: 0 18px 60px rgb(0 0 0 / 0.36);
   --opsidian-shadow-signal: 0 0 24px rgb(0 229 255 / 0.14);
+  --opsidian-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --opsidian-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --background: oklch(1 0 0);
   --foreground: oklch(0.148 0.004 228.8);
   --card: oklch(1 0 0);
@@ -142,5 +144,90 @@
   }
   html {
     @apply font-mono;
+  }
+}
+
+@layer components {
+  .opsidian-fade-up {
+    animation: opsidian-fade-up 360ms var(--opsidian-ease-out) both;
+  }
+
+  .opsidian-fade-up-delay-1 {
+    animation-delay: 60ms;
+  }
+
+  .opsidian-fade-up-delay-2 {
+    animation-delay: 120ms;
+  }
+
+  .opsidian-fade-up-delay-3 {
+    animation-delay: 180ms;
+  }
+
+  .opsidian-button-motion {
+    transition:
+      transform 160ms var(--opsidian-ease-out),
+      background-color 180ms var(--opsidian-ease-out),
+      border-color 180ms var(--opsidian-ease-out),
+      box-shadow 180ms var(--opsidian-ease-out),
+      color 180ms var(--opsidian-ease-out);
+  }
+
+  .opsidian-card-motion {
+    transition:
+      transform 200ms var(--opsidian-ease-out),
+      background-color 200ms var(--opsidian-ease-out),
+      border-color 200ms var(--opsidian-ease-out),
+      box-shadow 200ms var(--opsidian-ease-out);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .opsidian-button-motion:hover {
+    transform: translateY(-1px);
+  }
+
+  .opsidian-card-motion:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.opsidian-button-motion:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opsidian-fade-up,
+  .opsidian-fade-up-delay-1,
+  .opsidian-fade-up-delay-2,
+  .opsidian-fade-up-delay-3 {
+    animation: none;
+  }
+
+  .opsidian-button-motion,
+  .opsidian-card-motion {
+    transition:
+      background-color 140ms ease,
+      border-color 140ms ease,
+      box-shadow 140ms ease,
+      color 140ms ease,
+      opacity 140ms ease;
+  }
+
+  .opsidian-button-motion:active,
+  .opsidian-card-motion:hover {
+    transform: none;
+  }
+}
+
+@keyframes opsidian-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
