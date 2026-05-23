@@ -109,7 +109,7 @@ export default function Page() {
 
       <div className="relative z-10">
         <header className="opsidian-fade-up sticky top-0 z-30 px-4 pt-3 pb-2 md:px-[5.5rem] md:pt-6 md:pb-3 lg:px-[6.5rem]">
-          <div className="mx-auto flex w-full max-w-[94rem] flex-col gap-4 rounded-[12px] border border-[color:rgb(28_77_80_/_0.52)] bg-[color:rgb(5_11_13_/_0.72)] px-4 py-3 shadow-[0_18px_50px_rgb(0_0_0_/_0.22)] backdrop-blur-md md:px-8 md:py-4 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mx-auto flex w-full max-w-[94rem] flex-col gap-4 rounded-[12px] px-4 py-3 md:px-8 md:py-4 lg:flex-row lg:items-end lg:justify-between">
             <Image
               src={ieeeSbLogo}
               alt="IEEE UCSC Student Branch logo"
