@@ -6,7 +6,7 @@ import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
 const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
 const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
-const HACKATHON_INITIAL_ROUND = "2026-05-30T10:00:00+05:30"
+const HACKATHON_INITIAL_ROUND_END = "2026-06-06T11:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 const TIMELINE_EVENTS = [
@@ -62,18 +62,6 @@ const PRIZES = [
     amount: "LKR 20,000",
     status: "Confirmed Prize Pool",
     featured: true,
-  },
-  {
-    place: "2nd Place",
-    amount: "To Be Announced",
-    status: "Announcement Pending",
-    featured: false,
-  },
-  {
-    place: "3rd Place",
-    amount: "To Be Announced",
-    status: "Announcement Pending",
-    featured: false,
   },
 ] as const
 
@@ -189,7 +177,7 @@ export default function Page() {
                 </div>
 
                 <Countdown
-                  targetDate={HACKATHON_INITIAL_ROUND}
+                  targetDate={HACKATHON_INITIAL_ROUND_END}
                   className="opsidian-fade-up opsidian-fade-up-delay-3 relative lg:ml-auto lg:w-full lg:max-w-[42rem]"
                 />
               </section>
