@@ -6,7 +6,7 @@ import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
 const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
 const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
-const HACKATHON_INITIAL_ROUND_END = "2026-06-06T11:10:00+05:30"
+const HACKATHON_INITIAL_ROUND_END = "2026-06-06T11:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 const TIMELINE_EVENTS = [
