@@ -63,6 +63,18 @@ const PRIZES = [
     status: "Confirmed Prize Pool",
     featured: true,
   },
+  {
+    place: "2nd Place",
+    amount: "LKR 15,000",
+    status: "Confirmed Prize Pool",
+    featured: false,
+  },
+  {
+    place: "3rd Place",
+    amount: "LKR 10,000",
+    status: "Confirmed Prize Pool",
+    featured: false,
+  },
 ] as const
 
 export default function Page() {
