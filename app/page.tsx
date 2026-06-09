@@ -4,8 +4,6 @@ import { Countdown } from "@/components/core/countdown"
 import { SubmissionCta } from "@/components/core/submission-cta"
 import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
-const SUBMISSION_OPEN = "2026-06-09T10:00:00+05:30"
-const SUBMISSION_DEADLINE = "2026-06-16T10:00:00+05:30"
 const HACKATHON_INITIAL_ROUND_END = "2026-06-06T11:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
@@ -176,10 +174,7 @@ export default function Page() {
                     </p>
 
                     <div className="flex flex-wrap items-end gap-4 pt-2">
-                      <SubmissionCta
-                        openDate={SUBMISSION_OPEN}
-                        closeDate={SUBMISSION_DEADLINE}
-                      />
+                      <SubmissionCta />
                     </div>
 
                     <p className="[font-family:var(--font-mono)] text-[0.68rem] tracking-[0.2em] text-[var(--opsidian-text-muted)] uppercase">
