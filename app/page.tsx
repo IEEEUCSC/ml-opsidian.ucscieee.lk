@@ -282,8 +282,9 @@ export default function Page() {
                   <div className="h-px w-36 bg-gradient-to-r from-[var(--opsidian-primary)]/80 to-transparent" />
                 </div>
                 <p className="max-w-[28rem] text-[1rem] leading-8 text-[var(--opsidian-text-soft)]">
-                  The lead award is locked in. Additional placements remain
-                  reserved until the final sponsor allocation is confirmed.
+                  The prize structure is now locked in across all three
+                  placements, with a confirmed reward pool for the top teams in
+                  the final round.
                 </p>
               </div>
 
@@ -322,7 +323,7 @@ export default function Page() {
                         <p className="max-w-[28rem] text-[0.98rem] leading-7 text-[var(--opsidian-text-soft)]">
                           {prize.featured
                             ? "Awarded to the strongest end-to-end MLOps solution across architecture, deployment discipline, and operational reliability."
-                            : "This placement is reserved, but the final amount will be published once the remaining prize allocation is finalized."}
+                            : "Awarded to high-performing teams that deliver robust MLOps execution, technical clarity, and dependable production thinking."}
                         </p>
                       </div>
                     </div>
