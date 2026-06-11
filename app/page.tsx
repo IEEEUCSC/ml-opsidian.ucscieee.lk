@@ -4,7 +4,7 @@ import { Countdown } from "@/components/core/countdown"
 import { SubmissionCta } from "@/components/core/submission-cta"
 import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
-const HACKATHON_INITIAL_ROUND_END = "2026-06-06T11:00:00+05:30"
+const HACKATHON_FINAL_ROUND_END = "2026-06-18T21:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 const TIMELINE_EVENTS = [
@@ -44,7 +44,7 @@ const TIMELINE_EVENTS = [
     tag: "Round 01",
   },
   {
-    date: "09.06.2026",
+    date: "11.06.2026",
     title: "Hackathon Final Round",
     tag: "Final Round",
   },
@@ -184,7 +184,7 @@ export default function Page() {
                 </div>
 
                 <Countdown
-                  targetDate={HACKATHON_INITIAL_ROUND_END}
+                  targetDate={HACKATHON_FINAL_ROUND_END}
                   className="opsidian-fade-up opsidian-fade-up-delay-3 relative lg:ml-auto lg:w-full lg:max-w-[42rem]"
                 />
               </section>
