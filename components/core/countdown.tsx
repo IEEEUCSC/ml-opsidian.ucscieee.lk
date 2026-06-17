@@ -131,7 +131,7 @@ export function Countdown({ targetDate, className }: CountdownProps) {
         <p className="mt-5 text-[0.95rem] leading-8 text-[var(--opsidian-text-soft)]">
           {timeRemaining.total === 0
             ? "The countdown has reached zero. The ML Opsidian: Genesis Hackathon Final Round has now ended."
-            : "Track the remaining time in the ML Opsidian: Genesis Hackathon Final Round. The round runs from June 11 at 9:00 PM to June 18 at 9:00 PM."}
+            : "Track the remaining time in the ML Opsidian: Genesis Hackathon Final Round. The round runs from June 11 at 9:00 PM to June 19 at 9:00 PM."}
         </p>
       </div>
     </section>
