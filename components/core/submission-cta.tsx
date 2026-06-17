@@ -15,7 +15,7 @@ export function SubmissionCta() {
       </Button>
 
       <p className="[font-family:var(--font-mono)] text-[0.62rem] tracking-[0.18em] text-[var(--opsidian-text-muted)] uppercase">
-        June 11, 9:00 PM to June 18, 9:00 PM
+        June 11, 9:00 PM to June 19, 9:00 PM
       </p>
     </div>
   )

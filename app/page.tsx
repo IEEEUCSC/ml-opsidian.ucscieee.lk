@@ -4,7 +4,7 @@ import { Countdown } from "@/components/core/countdown"
 import { SubmissionCta } from "@/components/core/submission-cta"
 import ieeeSbLogo from "@/IEEE SB Logo.svg"
 
-const HACKATHON_FINAL_ROUND_END = "2026-06-18T21:00:00+05:30"
+const HACKATHON_FINAL_ROUND_END = "2026-06-19T21:00:00+05:30"
 const DELEGATE_BOOKLET = "/ML_Opsidian_%20Genesis%20_DelegateBooklet.pdf"
 const REGISTRATION_LINK = "https://forms.gle/LEAivdsGwpxq4ATK6"
 const TIMELINE_EVENTS = [
