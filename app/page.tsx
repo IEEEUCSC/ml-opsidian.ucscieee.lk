@@ -123,12 +123,18 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 lg:flex lg:w-auto lg:justify-end">
+              <div className="grid w-full grid-cols-1 gap-2 sm:grid-cols-3 lg:flex lg:w-auto lg:justify-end">
+                <a
+                  href="/claim-certificate"
+                  className="opsidian-button-motion inline-flex h-10 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                >
+                  Claim Certificate
+                </a>
                 <a
                   href={REGISTRATION_LINK}
                   target="_blank"
                   rel="noreferrer"
-                  className="opsidian-button-motion inline-flex h-10 items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-background)] uppercase shadow-[0_0_20px_rgb(0_229_255_/_0.16)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                  className="opsidian-button-motion inline-flex h-10 items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.68rem] tracking-[0.22em] text-[var(--opsidian-text)] uppercase hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
                 >
                   Register Now
                 </a>
@@ -366,10 +372,16 @@ export default function Page() {
                   </p>
                   <div className="flex flex-col items-start gap-2">
                     <a
+                      href="/claim-certificate"
+                      className="opsidian-button-motion inline-flex h-10 min-w-[14rem] items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.66rem] tracking-[0.2em] text-[var(--opsidian-background)] uppercase shadow-[0_0_18px_rgb(0_229_255_/_0.14)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                    >
+                      Claim Certificate
+                    </a>
+                    <a
                       href={REGISTRATION_LINK}
                       target="_blank"
                       rel="noreferrer"
-                      className="opsidian-button-motion inline-flex h-10 min-w-[14rem] items-center justify-center rounded-[10px] border border-[color:rgb(0_229_255_/_0.55)] bg-[var(--opsidian-primary)] px-4 [font-family:var(--font-mono)] text-[0.66rem] tracking-[0.2em] text-[var(--opsidian-background)] uppercase shadow-[0_0_18px_rgb(0_229_255_/_0.14)] hover:bg-[color:rgb(0_229_255_/_0.88)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
+                      className="opsidian-button-motion inline-flex h-10 min-w-[14rem] items-center justify-center rounded-[10px] border border-[var(--opsidian-border)] bg-[color:rgb(13_23_26_/_0.82)] px-4 [font-family:var(--font-mono)] text-[0.66rem] tracking-[0.2em] text-[var(--opsidian-text)] uppercase hover:border-[color:rgb(0_229_255_/_0.42)] hover:bg-[color:rgb(19_33_38_/_0.96)] focus-visible:ring-2 focus-visible:ring-[color:rgb(0_229_255_/_0.28)] focus-visible:outline-none"
                     >
                       Register
                     </a>
